@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <title>Language Hub - Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-search">
+            <a href="index.html">
+                <div class="logo">
+                    <h1>Language Hub</h1>
+                </div>
+            </a>
+
+        </div>
+        
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="assets/pages/cursos.html">Cursos</a></li>
+                <li><a onclick="openDialog('contact')">Contato</a></li>
+                <li><button class="sharp-button" onclick="openDialog('matricula')">Matricule-se</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="dialog contactDialog hidden">
+        <div class="dialog-content">
+            <i class="bi bi-x-lg exit-dialog" onclick="closeDialog('contact')"></i>
+            <h1>Contato</h1>
+            <form>
+                <div>
+                    <label>Nome</label>
+                    <input type="text" placeholder="Nome" required>
+                </div>
+                
+                <div>
+                    <label>Email</label>
+                    <input type="email" placeholder="Email" required>
+                </div>
+
+                <div>
+                    <label>Assunto</label>
+                    <input type="text" placeholder="Assunto" required>
+                </div>
+
+                <div>
+                    <label>Mensagem</label>
+                    <textarea placeholder="Mensagem" rows="5" cols="30" required></textarea>
+                </div>
+                <button class="sharp-button">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="dialog matriculaDialog hidden">
+        <div class="dialog-content">
+            <i class="bi bi-x-lg exit-dialog" onclick="closeDialog('matricula')"></i>
+            <h1>Realize sua matricula</h1>
+            <form>
+                <div>
+                    <label>Nome</label>
+                    <input type="text" placeholder="Nome" required>
+                </div>
+                
+                <div>
+                    <label>Email</label>
+                    <input type="email" placeholder="Email" required>
+                </div>
+
+                <div>
+                    <label>Curso</label>
+                    <select required>
+                        <option value="">Selecione</option>
+                        <option value="">Inglês - R$1999,90</option>
+                        <option value="">Espanhol - R$1199,90</option>
+                        <option value="">Francês - R$950,90</option>
+                        <option value="">Alemão - R$849,90</option>
+                        <option value="">Italiano - R$980,90</option>
+                        <option value="">Chinês - R$915,90</option>
+                        <option value="">Japonês - R$795,90</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Forma de Pagamento</label>
+                    <select required>
+                        <option value="">Selecione</option>
+                        <option value="">Boleto</option>
+                        <option value="">Cartão de Credito</option>
+                        <option value="">Cartão de Debito</option>
+                        <option value="">Pix</option>
+                    </select>
+                    
+                </div>
+                <button class="sharp-button">Matricular-se</button>
+            </form>
+        </div>
+    </div>
+
+    <main>
+        <section class="first">
+
+            <div class="first-seen" data-aos="fade-up">
+                <div class="main-text">
+                    <h1>Os melhores cursos<br> de <span class="gradient">Tecnologia</span> do mercado<span class="gradient">.</span></h1>
+                    <p>Explore o melhor conteúdo de tecnologia do país.</p>
+                </div>
+
+                <img class="bubble" src="img/selo-animation-luz.png">
+    
+                <div class="main-img">
+                </div>
+    
+                <div class="main-button">
+                    <button class="sharp-button" onclick="window.location.href='assets/pages/cursos.html'">Ver Cursos</button>
+                </div>
+            </div>
+            
+            <div class="cards-container">
+                
+    
+                <div class="card" data-aos="fade-right">
+                    <div class="card-img">
+        
+                        
+                    </div>
+    
+                    <div class="card-text">
+                        <h2>Tecnologia no aprendizado</h2>
+                        <p>Além de escolher a modalidade de aula mais adequada para aprender um novo idioma no seu tempo, com tecnologia unica, você pratica um novo idioma dentro e fora da sala de aula através do app Language Hub, seu assistente pessoal para aprender inglês. O Language Hub tem exercícios de inglês para praticar a língua quando e onde quiser em seu smartphone, e muito mais.</p>
+                    </div>
+    
+                    <div class="card-button">
+                        <button class="sharp-button">Explorar</button>
+                    </div>
+                </div>
+    
+                <div class="card" data-aos="fade-left">
+                    <div class="card-img">
+                      
+                    </div>
+    
+                    <div class="card-text">
+                        <h2>Modalidades e salas de aula</h2>
+                        <p>Em todas as escolas Language Hub, você encontra a infraestrutura necessária em salas de aula personalizadas e padronizadas para se tornar fluente em inglês ou em outros 7 idiomas disponíveis nas escolas Language Hub.</p>
+                    </div>
+    
+                    <div class="card-button">
+                        <button class="sharp-button">Conectar</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="second">
+            <div>
+                <div class="blur-line"></div>
+
+                <div>
+                    <div class="Language Hub" data-aos="fade-up">
+                        <div class="Language Hub-text">
+                            <h1>Conheça o <span class="gradient">Language Hub</span>.</h1>
+    
+                            <p>
+                                Explore o melhor conteúdo de tecnologia do mercado.
+                                <br> 
+                                Aqui você tem acesso a um processo de aprendizado acessível e com direcionamento na sua jornada de estudos. 
+                                <br> 
+                                Clique no botão abaixo para saber mais.
+                            </p>
+    
+                            <button class="sharp-button" onclick="window.location.href='pages/cursos.html'">Ver Cursos</button>
+                        </div>
+    
+    
+                        <div class="logo-effect">
+                        </div>
+                    </div>
+                    
+                    <div class="line"></div>
+    
+                    <div class="prices">
+                        <div class="price-card basic" data-aos="fade-left">
+    
+                            <div class="price-card-text">
+                                <div>
+                                    <div class="price-card-img">
+                                        <img src="img/icon-basic.svg" draggable="false">
+                                    </div>
+                                    <br>
+                                    <p>Plano Básico</p>
+                                    <h1>R$ 249,90</h1>
+                                </div>
+                                
+    
+                                <ul class="price-card-list">
+                                    <li>Acesso ilimitado</li>
+                                    <li>Desafios</li>
+                                    <li>Certificação</li>
+                                    <li>Aulas gravadas</li>
+                                </ul>
+                            </div>
+    
+                            <div class="price-card-button">
+                                <button class="sharp-button" onclick="openDialog('matricula')">Matricule-se</button>
+                            </div>
+    
+                        </div>
+    
+                        <div class="price-card pro" data-aos="fade-right">
+    
+                            
+    
+                            <div class="price-card-text">
+                                <div>
+                                    <div class="price-card-img">
+                                        <img src="img/icon-pro.svg"  draggable="false">
+                                    </div>
+                                    <br>
+                                    <p>Plano Pro</p>
+                                    <div class="discount">
+                                        <p>De <span class="dash">R$ 499,90</span> por</p>
+    
+                                        <h1>R$ 359,90</h1>
+                                    </div>
+                                    
+                                </div>
+                                
+    
+                                <ul class="price-card-list">
+                                    <li>Acesso ilimitado</li>
+                                    <li>Desafios</li>
+                                    <li>Certificação</li>
+                                    <li>Aulas gravadas</li>
+                                    <span class="special">
+                                        <li>Comunidade</li>
+                                    </span>
+                                    <span class="special">
+                                        <li>Conteúdo exclusivo</li>
+                                    </span>
+                                </ul>
+                            </div>
+    
+                            <div class="price-card-button">
+                                <button class="sharp-button" onclick="openDialog('matricula')">Matricule-se</button>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="logo">
+                <h1>Language Hub</h1>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright © 2022-2024 Language Hub. Todos os direitos reservados.</p>
+            </div>
+
+            <div class="social">
+                <p>Siga-nos em nossas redes</p>
+
+                <div class="social-icons">
+                    <div class="instagram">
+                        <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </div>
+    
+                    <div class="github">
+                        <a href="#" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+        </div>
+    </footer>
+</body>
+<script src="assets/script/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</html>
+
